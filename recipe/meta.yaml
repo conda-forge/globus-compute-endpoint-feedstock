@@ -1,5 +1,5 @@
 {% set name = "globus-compute-endpoint" %}
-{% set version = "3.10.0" %}
+{% set version = "3.11.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 1d6ec8021c49e0d290825f76224387a86192f4cae4ecc42c77680da86a0efdf4
+  sha256: 2ba330691eb5492368740ce4dc8a2f7ac08c24e72a9151f0706f0ddac0e59dd3
 
 build:
   entry_points:
@@ -27,7 +27,7 @@ requirements:
     - python >={{ python_min }}
     - requests >=2.31.0,<3
     - globus-sdk
-    - globus-compute-sdk ==3.10.0
+    - globus-compute-sdk ==3.11.0
     - globus-identity-mapping ==0.4.0
     - texttable >=1.6.4,<2
     - psutil <6
