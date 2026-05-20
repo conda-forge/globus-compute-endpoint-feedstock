@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: globus-compute-endpoint
-  version: 4.11.0
+  version: 4.12.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 9f41fb75aab6415c11f1bd969a536a9b2eaec2d3e6c4f6160f86d52ce3179c83
+  sha256: adfc6bb62338d3456041ea254ca9f6be85dd73a18aae8b4ae9b41097e7b5198c
 
 build:
   number: 0
@@ -30,7 +30,7 @@ requirements:
     - python >=${{ python_min }}
     - requests >=2.31.0,<3
     - globus-sdk
-    - globus-compute-sdk ==4.11.0
+    - globus-compute-sdk ==4.12.0
     - globus-identity-mapping ==0.5.0
     - texttable >=1.6.4,<2
     - psutil <6
